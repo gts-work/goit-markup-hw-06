@@ -41,6 +41,8 @@ html {
 
   --transform-function: cubic-bezier(0.4, 0, 0.2, 1);
   --time-var: 250ms;
+
+  --modal-border-color: rgba(33, 33, 33, 0.2);
 }
 
 /************************************* Body */
@@ -94,10 +96,20 @@ h6 {
 /************************************* Button */
 .button {
   display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
 
-  font-weight: 500;
+  background-color: var(--active-color);
+  box-shadow: 0px 4px 4px var(--color-button);
+  color: var(--color-white);
+
+  outline: 0;
+
+  font-weight: 900;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
   text-align: center;
   text-decoration: none;
 
@@ -335,7 +347,7 @@ h6 {
   color: var(--color-white);
 }
 
-.hero .button.active {
+/* .hero .button.active {
   min-width: 200px;
   height: 50px;
   padding: 10px 32px;
@@ -350,7 +362,7 @@ h6 {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-}
+} */
 
 /************************************* Section */
 /* .section {
@@ -853,15 +865,23 @@ h6 {
 
 .footer-list {
   display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-list > .item:not(:last-child) {
   margin-right: 70px;
 }
 
-.footer-join > .title {
+.footer-join {
+  margin-right: 94px;
+}
+
+.footer-title {
+  display: block;
   margin-bottom: 20px;
 
+  font-style: normal;
   font-weight: 900;
   font-size: 14px;
   line-height: 1.14;
@@ -904,6 +924,52 @@ h6 {
   transform: scale(1.2);
 }
 
+.footer-subscribe {
+  display: block;
+}
+
+.subscribe-email {
+  display: inline-block;
+
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 12px;
+
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-send {
+  display: inline-flex;
+
+  padding: 10px 28px;
+
+  align-items: center;
+}
+
+.title-send {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.icon-send {
+  display: inline-block;
+
+  fill: var(--color-white);
+}
+
+.js-speaker-form:focus-within {
+  color: red;
+}
+
 /************************************* MODAL */
 .backdrop {
   position: fixed;
@@ -927,6 +993,8 @@ h6 {
 
   width: 530px;
   height: 580px;
+
+  padding: 40px;
 
   background-color: var(--color-white);
 
@@ -977,4 +1045,78 @@ h6 {
   transform: translateX(-50%) scale(0.5);
 }
 
-/************************************* TEST */ ;
+.form-block {
+  position: absolute;
+}
+
+.modal-title {
+  display: block;
+
+  /* left: 50%; */
+  width: 100%;
+
+  margin: 0;
+  margin-bottom: 12px;
+
+  /* transform: translateX(-50%); */
+
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 0.87;
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+
+  /* outline: 1px solid tomato; */
+}
+
+.modal-field {
+  display: block;
+
+  position: relative;
+
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.field-block {
+  position: relative;
+
+  width: 100%;
+  height: 40px;
+}
+
+.modal-input {
+  display: block;
+
+  position: absolute;
+  top: 50%;
+
+  width: 100%;
+  height: 40px;
+
+  padding: 0;
+
+  transform: translateY(-50%);
+
+  border: 1px solid var(--modal-border-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.modal-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  margin-left: 12px;
+
+  transform: translateY(-50%);
+}
+
+/************************************* TEST */

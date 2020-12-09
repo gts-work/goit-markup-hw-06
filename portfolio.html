@@ -257,7 +257,7 @@
           </address>
         </div>
         <div class="footer-join item">
-          <p class="title">присоединяйтесь</p>
+          <em class="footer-title">присоединяйтесь</em>
           <ul class="social-list list">
             <li class="list-item">
               <a href="" class="link-item">
@@ -289,7 +289,26 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe item">
+          <em class="footer-title">Подпишитесь на рассылку</em>
+          <form action="" class="js-speaker-form">
+            <input
+              type="email"
+              class="subscribe-email form-input"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button btn-send" data-modal-open>
+              <p class="title-send">Подписаться</p>
+              <svg class="icon icon-send" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <script src="./js/speaker.js"></script>
   </body>
 </html>

@@ -393,7 +393,7 @@
           </address>
         </div>
         <div class="footer-join item">
-          <p class="title">присоединяйтесь</p>
+          <em class="footer-title">присоединяйтесь</em>
           <ul class="social-list list">
             <li class="list-item">
               <a href="" class="link-item">
@@ -425,6 +425,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe item">
+          <em class="footer-title">Подпишитесь на рассылку</em>
+          <form action="" class="js-speaker-form">
+            <input
+              type="email"
+              class="subscribe-email form-input"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button btn-send" data-modal-open>
+              <p class="title-send">Подписаться</p>
+              <svg class="icon icon-send" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -438,9 +455,46 @@
             </svg>
           </div>
         </button>
+
+        <div class="form-block">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+          <form action="" class="js-speaker-form">
+            <label class="modal-field input-name">
+              <span class="modal-label">Имя</span>
+              <div class="field-block">
+                <input type="text" class="modal-input" name="name" />
+                <svg class="icon modal-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label class="modal-field input-name">
+              <span class="modal-label">Телефон</span>
+              <div class="field-block">
+                <input type="text" class="modal-input" name="name" />
+                <svg class="icon modal-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </div>
+            </label>
+
+            <label class="modal-field input-name">
+              <span class="modal-label">Почта</span>
+              <div class="field-block">
+                <input type="email" class="modal-input" name="name" />
+                <svg class="icon modal-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </div>
+            </label>
+          </form>
+        </div>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/speaker.js"></script>
   </body>
 </html>
