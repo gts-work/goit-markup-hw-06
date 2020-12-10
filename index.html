@@ -464,29 +464,52 @@
               <span class="modal-label">Имя</span>
               <div class="field-block">
                 <input type="text" class="modal-input" name="name" />
-                <svg class="icon modal-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-send"></use>
+                <svg class="icon modal-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-person"></use>
                 </svg>
               </div>
             </label>
 
-            <label class="modal-field input-name">
+            <label class="modal-field input-phone">
               <span class="modal-label">Телефон</span>
               <div class="field-block">
-                <input type="text" class="modal-input" name="name" />
-                <svg class="icon modal-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-send"></use>
+                <input type="text" class="modal-input" name="phone" />
+                <svg class="icon modal-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-phone-modal"></use>
                 </svg>
               </div>
             </label>
 
-            <label class="modal-field input-name">
+            <label class="modal-field input-email">
               <span class="modal-label">Почта</span>
               <div class="field-block">
-                <input type="email" class="modal-input" name="name" />
-                <svg class="icon modal-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-send"></use>
+                <input type="email" class="modal-input" name="email" />
+                <svg class="icon modal-icon" width="18" height="18">
+                  <use href="./images/sprite.svg#icon-email-modal"></use>
                 </svg>
+              </div>
+            </label>
+
+            <label class="modal-field input-comment">
+              <span class="modal-label">Комментарий</span>
+              <div class="field-block modal-comment">
+                <textarea
+                  class="modal-textarea"
+                  name="comment"
+                  id="comment"
+                  placeholder="Введите текст"
+                ></textarea>
+              </div>
+            </label>
+
+            <label class="modal-field input-terms">
+              <div class="field-block modal-terms">
+                <input type="checkbox" class="modal-checkbox" name="terms" />
+                <span class="icon-checkbox"></span>
+                <span class="terms">
+                  Соглашаюсь с рассылкой и принимаю
+                  <a class="terms-link link" href="">Условия договора</a>
+                </span>
               </div>
             </label>
           </form>
