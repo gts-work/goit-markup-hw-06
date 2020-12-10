@@ -967,9 +967,9 @@ h6 {
   fill: var(--color-white);
 }
 
-.js-speaker-form:focus-within {
+/* .js-speaker-form:focus-within {
   color: red;
-}
+} */
 
 /************************************* MODAL */
 .backdrop {
@@ -1152,7 +1152,9 @@ h6 {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
+}
 
+.modal-textarea::placeholder {
   color: var(--modal-placeholder);
 }
 
@@ -1198,6 +1200,10 @@ h6 {
   border-radius: 4px;
 
   transition: transform 250ms linear;
+}
+
+.modal-checkbox:checked + .icon-checkbox {
+  border: transparent;
 
   background-color: var(--active-color);
   background-image: url("../images/check.svg");
