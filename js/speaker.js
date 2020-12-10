@@ -12,7 +12,7 @@
 
             e.currentTarget.reset();
         });
-    
+
     document
         .querySelector(".js-speaker-modal-form")
         .addEventListener("submit", (e) => {
