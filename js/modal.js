@@ -1,5 +1,5 @@
 (() => {
-  console.log('LOAD');
+    console.log('MODAL');
 
     const refs = {
         openModalBtn: document.querySelector('[data-modal-open]'),
