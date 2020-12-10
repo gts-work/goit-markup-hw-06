@@ -1116,6 +1116,8 @@ h6 {
   border: 1px solid var(--modal-border-color);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition: border var(--time-var) var(--transform-function);
 }
 
 .modal-icon {
@@ -1126,6 +1128,10 @@ h6 {
   margin-left: 12px;
 
   transform: translateY(-50%);
+
+  fill: var(--color-black);
+
+  transition: fill var(--time-var) var(--transform-function);
 }
 
 .modal-comment {
@@ -1152,6 +1158,8 @@ h6 {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
+
+  transition: border var(--time-var) var(--transform-function);
 }
 
 .modal-textarea::placeholder {
@@ -1222,7 +1230,39 @@ h6 {
   margin-top: 30px;
 }
 
-.btn-submit {
+.modal-btn > .btn-submit {
+  cursor: pointer;
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--active-color);
+  outline: none;
+}
+
+.modal-textarea:hover,
+.modal-textarea:focus {
+  border-color: var(--active-color);
+  outline: none;
+}
+
+.modal-input:hover ~ .modal-icon,
+.modal-input:focus ~ .modal-icon {
+  fill: var(--active-color);
+}
+
+.modal-input:not(:placeholder-shown) {
+  border-color: var(--active-color);
+  outline: none;
+}
+
+.modal-input:not(:placeholder-shown) ~ .modal-icon {
+  fill: var(--active-color);
+}
+
+.modal-textarea:not(:placeholder-shown) {
+  border-color: var(--active-color);
+  outline: none;
 }
 
 /************************************* TEST */
